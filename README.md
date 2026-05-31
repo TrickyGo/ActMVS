@@ -1,7 +1,6 @@
 ## Welcome to the Pytorch Implementation of "ActMVS: Active Scene Reconstruction with Monocular Multi-View Stereo" for ICRA 2026.
 
-
-#### 0.Setup
+## 0.Setup
 ```
 conda create -y -n ActMVS python=3.9 cmake=3.14.0
 conda activate ActMVS
@@ -17,21 +16,23 @@ pip install -r requirements.txt
 python setup.py install --headless --bullet
 ```
 
-#### 1.Run
+## 1.Run
 ```
 sh scripts/run.sh
 ```
 
-#### 2.Check Results
+## 2.Check Results
 
 <div align="center">
   <img src="results/Reconstruction_Vis.png" alt="Reconstruction_Vis" width="800">
 </div>
 
 <div align="center">
-  <img src="results/PCD_vis.png" alt="PCD_vis" width="800">
+  <img src="results/PCD_vis.png" alt="PCD_vis" width="400">
 </div>
 
 <div align="center">
-  <img src="results/Mesh_vis.png" alt="Mesh_vis" width="800">
+  <img src="results/Mesh_vis.png" alt="Mesh_vis" width="400">
 </div>
+
+## Thanks for your attention! More instructions will be added soon!
