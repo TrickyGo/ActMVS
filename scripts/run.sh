@@ -1,0 +1,2 @@
+python active_reconstruction.py
+python generate_mesh.py

@@ -1,0 +1,38 @@
+experiment:
+  scene_name: replica/room0
+  mesh_path: replica_v1/room_0/mesh.ply
+  scene_id: replica_v1/room_0/habitat/replicaSDK_stage.stage_config.json
+  has_missing_surface: false
+  output_dir: ./results
+  budget: 600
+  record_interval: 60
+
+
+voxel_map:
+  safety_margin: 0.3
+  map_resolution: [0.2, 0.2, 0.2]
+  min_gaussian_per_voxel: 5
+
+gaussian_map:
+  optimization_steps: 10
+  prune_interval: 5
+
+  sampler:
+    batch_size: 8 
+    active_size: 3 
+    
+  optimizer:
+    mean_lr: 0.0005
+    rotation_lr: 0.0005
+    opacity_lr: 0.01
+    scale_lr : 0.01
+    harmonic_lr: 0.0001
+
+
+planner:
+  type: random
+  radius: 2.0
+  robot_size: 0.3
+  sample_num: 100
+
+
